@@ -8,7 +8,7 @@ window.onload   = function() {
   ctx.fillStyle = "#898989";
   ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-   var myName = [
+   var charmanderArr = [
     [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
     [0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
     [0,0,0,0,0,0,0,1,2,2,2,3,1,0,0,0,0,0,0,0,1,6,1,0,0,0,0,0,0,0,0,0,0,0,0,0],
@@ -35,37 +35,37 @@ window.onload   = function() {
   var xPos = 0;
   var yPos = 0;
 
-  for (var i=0; i < myName.length; i++) {
-    for(var r=0; r < myName[i].length; r++ ){
+  for (var i=0; i < charmanderArr.length; i++) {
+    for(var r=0; r < charmanderArr[i].length; r++ ){
       ctx.fillRect(xPos, yPos, 32, 32);
       //grey
-    if(myName[i][r]===0){
+    if(charmanderArr[i][r]===0){
       ctx.fillStyle = "#898989";
     }
     //black
-      if(myName[i][r]===1){
+      if(charmanderArr[i][r]===1){
       ctx.fillStyle = "#010000";
 
     }
     //orange darker
-      if(myName[i][r]===2){
+      if(charmanderArr[i][r]===2){
       ctx.fillStyle = "#FB8700";
 
     }
     //orange lighter
-    if(myName[i][r]===3){
+    if(charmanderArr[i][r]===3){
       ctx.fillStyle = "#FF7204";
     }
     //white
-    if(myName[i][r]===4){
+    if(charmanderArr[i][r]===4){
       ctx.fillStyle = "#fff";
     }
     //yellow
-    if(myName[i][r]===5){
+    if(charmanderArr[i][r]===5){
       ctx.fillStyle = "#F7E401";
     }
     //red
-    if(myName[i][r]===6){
+    if(charmanderArr[i][r]===6){
       ctx.fillStyle = "#FF3802";
     }
     //move over 32px
